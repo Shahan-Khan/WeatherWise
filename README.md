@@ -80,6 +80,7 @@ Sign up at OpenWeather to get an API key.
 **CSS**
 - Customize the styles by modifying the CSS classes used in the components.
 
-##Demo
+## Demo
+
 ![image](https://github.com/Shahan-Khan/WeatherWise/assets/72437646/e8e38c89-a018-4fda-8a0e-34fa5bb4a79f)
 
