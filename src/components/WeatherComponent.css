@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.weatherHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-details {
+  background-image: url("../images/3156743.jpg");
+  background-size: cover;
+  display: flex;
+  height: 350px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 20px;
+  z-index: 2;
+  font-family: "Quicksand";
+  padding: 20px 20px 20px 20px;
+}
+
+.weather-forcast p {
+  font-weight: 500;
+  font-size: small;
+  margin: 0;
+}
+
+.weather-forcast h4 {
+  margin: 0;
+}
+
+.weather-forcast {
+  /* position: absolute; */
+  display: flex;
+  height: 300px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(170, 170, 170);
+  font-family: "QuickSand";
+  margin-left: -35px;
+  z-index: 1;
+  padding: 10px 30px 10px 50px;
+}
+
+.weather-forcast img {
+  height: 70px;
+  width: 70px;
+}
+
+.forcast-cards{
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.top,
+.bottom {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
+
+.load-msg{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: larger;
+}

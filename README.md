@@ -1,70 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WeatherWise 
+WeatherWise is a weather forecasting app that allows users to:
 
-## Available Scripts
+- Get the current weather and weather forecast for their current location.
+- Search for and display weather information for any city.
+- The app uses the OpenWeather API to fetch weather data.
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**1. Current Location Weather:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Automatically fetches and displays the current weather for the user's location upon loading the app.
+- Asks for location access permission with an alert.
 
-### `npm test`
+**2. City Search:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Allows users to search for and display weather information by entering a city name.
+- Includes a search bar with an input field and a search button.
 
-### `npm run build`
+**3. Current Weather and Forecast:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Displays current weather including temperature and description.
+- Provides a 5-day weather forecast with date, temperature, and weather description.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**4. Error Handling:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Displays appropriate error messages if there's an issue fetching data.
+- Handles errors gracefully and informs the user.
 
-### `npm run eject`
+**5. Loading State:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Shows a loading message while fetching weather data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to use
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**1. Get an API Key:**
 
-## Learn More
+Sign up at OpenWeather to get an API key.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**2. Set Up the Project:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Create a new React project using `create-react-app`.
+- Implement the components and logic as described in the project structure.
 
-### Code Splitting
+**3. Replace the API Key:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Replace 'Weather_API_KEY' in the code with your actual API key.
 
-### Analyzing the Bundle Size
+**4. Run the App:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Start your React app using `npm start` or `yarn start`.
 
-### Making a Progressive Web App
+**5. Usage:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The app will initially attempt to get the user's current location and display the weather for that location.
+- Users can also search for weather information by entering a city name and clicking the search button.
+## Project Structure
 
-### Advanced Configuration
+**1. App:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Manages the overall state of the application.
+- Handles geolocation to get the user's current location.
+- Includes the search bar and displays weather information.
 
-### Deployment
+**2. SearchBar:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Provides an input field and a search button for entering a city name.
+- Triggers the search action to update the weather information.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**3. WeatherComponent:**
+
+- Fetches and displays current weather and weather forecast data based on the city or coordinates.
+- Manages the loading and error states during data fetching.
+## Customization 
+
+**CSS**
+- Customize the styles by modifying the CSS classes used in the components.
